@@ -1,8 +1,10 @@
-# k8s/deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
+  namespace: default  # ← ajoute ton namespace ici (ex: argo-apps ou autre)
+  labels:
+    app: nginx
 spec:
   replicas: 2
   selector:
