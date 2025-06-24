@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
-  namespace: test  # ← ajoute ton namespace ici (ex: argo-apps ou autre)
+  namespace: test-namespace  # ← ajoute ton namespace ici (ex: argo-apps ou autre)
   labels:
     app: nginx
 spec:
